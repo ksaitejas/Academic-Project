@@ -1,0 +1,24 @@
+/* src/toastStyles.css */
+/* Styling the toast container */
+.Toastify {
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 9999;
+    max-width: 300px;
+}
+
+/* Styling the success notification */
+.Toastify__toast--success {
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+/* Styling the close button */
+.Toastify__close-button {
+    color: #fff;
+}

@@ -1,0 +1,476 @@
+/* Apply styles to the form container */
+body {
+  background-color: whitesmoke;
+  /* overflow-x: hidden; */
+}
+  .LoginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* Increase the maximum width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    /* margin-bottom: auto; */
+  }
+  .LoginElements{
+    width: 400px;
+  }
+  /* Style the input fields */
+  .LoginElements > input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the labels */
+  .LoginElements > label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the submit button */
+  .LoginElements > button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* You can adjust the color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .LoginElements > button[type="submit"]:hover {
+    background-color: #0056b3; /* Adjust the hover color as desired */
+  }
+  
+  /* Style the "OR" text */
+  .LoginElements > p {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Style the Register button */
+  .LoginElements > a[role="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3b5998; /* Adjust the color */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .LoginElements > a[role="button"]:hover {
+    background-color: #29487d; /* Adjust the hover color as desired */
+  }
+  
+  /* Style the JWT token alert */
+  .alert.alert-success {
+    margin-top: 20px;
+  }
+  
+  .RegistrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* You can adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+    margin-bottom: auto;
+  }
+
+  .RegistrationElements{
+    width: 400px;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* Style all input fields */
+  .RegistrationElements > input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the labels */
+  .RegistrationElements > label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the submit button */
+  .RegistrationElements > button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* You can adjust the color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .RegistrationElements > button[type="button"]:hover {
+    background-color: #0056b3; /* Adjust the hover color as desired */
+  }
+  
+  /* Style the "Have an account?" text */
+  .RegistrationElements > p {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Style the "Sign In" link */
+  .RegistrationElements > a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .RegistrationElements > a:hover {
+    text-decoration: underline;
+    
+  }
+
+  .horizontal-menu-container {
+    display: flex;
+    justify-content:space-between;
+  }
+  .horizontal-menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color:#317773;
+    width: 100%;
+    padding: 10px;
+    color : black;
+  }
+  .menu-items {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+  }
+  
+  .sub-dropdown {
+    position: relative;
+  }
+  
+  .sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #317773;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+    left: 0;
+    top: 100%;
+  }
+  
+  .sub-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+  }
+  
+  .LinkStyle {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    /* margin-right: 20px; */
+  }
+  
+  .LinkStyle:hover {
+    background-color: #f1f1f1;
+  }
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #E7E8D1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 10px black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+/* Style for buttons */
+.button button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin:10px auto;
+}
+
+.button button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for input fields */
+.value input[type="text"],
+.value input[type="date"],
+.value input[type="file"],
+.status-search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for labels */
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: larger;
+}
+
+
+.result-table {
+  width: 100%; /* Make the table fill its container */
+  border-collapse: collapse; /* Collapse borders for better alignment */
+  text-align: center; /* Center-align the table content */
+  /* margin-right: 1130%; */
+}
+
+.result-table th,
+.result-table td {
+  padding:5px; /* Add padding to cells for spacing */
+  border: 1px solid #ccc; /* Add borders to cells */
+}
+
+.result-table th {
+  background-color: #b8b3b3; /* Background color for table headers */
+}
+
+.result-table tbody tr {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.column-width {
+  width: 15%; /* Set a percentage width for the columns using this class */
+}
+
+.main-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1; /* Allow content to grow and push footer down */
+  /* margin-bottom: 60px; */
+  
+}
+
+.bodyClass{
+  margin-bottom: 30px;
+}
+
+.footerClass{
+  /* margin-top: 30px; */
+  padding-top: 50px
+}
+.foot{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  opacity:0.7;
+}
+
+/* Define styles for the table */
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Define styles for table headers */
+.result-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Define styles for table rows */
+.result-table tr {
+  border: 1px solid #ddd;
+}
+
+/* Define styles for table cells */
+.result-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Define styles for the "No results found" message */
+.no-results {
+  text-align: center;
+  padding: 8px;
+  font-style: italic;
+  color: #999;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+  .LoginForm,
+  .RegistrationForm {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .LoginElements,
+  .RegistrationElements {
+    width: 100%;
+    margin: 0;
+  }
+
+  .LoginElements>button[type="submit"],
+  .RegistrationElements>button[type="button"] {
+    margin-top: 10px;
+  }
+
+  .button button {
+    margin: 10px 0;
+  }
+
+  .horizontal-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-items {
+    flex-direction: column;
+  }
+
+  .sub-dropdown,
+  .sub-dropdown-content {
+    position: static;
+    display: block;
+  }
+  .logout-button {
+    left: -200px;
+    margin-top: 10px; 
+    /* Adjust the value as needed */
+    /* width: 100%; */
+    } 
+  .foot {
+    /* background-color: #333;
+    text-align: center;
+    padding: 10px;*/
+    width: 100%; 
+    background-color: black;
+    color: white;
+    position:sticky;
+    /* bottom: 0; */
+    /* margin-top: 20px; */
+  }
+    .scrollable-table {
+      max-height: 500px;
+      /* Adjust the height as needed */
+      overflow: auto;
+      overflow-x: auto;
+    }
+  
+    /* Optional: To make the table headers sticky */
+    .result-table thead {
+      position: sticky;
+      top: 0;
+      background-color: #f2f2f2;
+    }
+
+    /* .result-table thead th:first-child {
+      position: sticky;
+      left: 0;
+      background-color: #f2f2f2;
+    }
+        .table-container {
+          min-width: 100%;
+          /* Adjust the width as needed */
+        .result-table{
+          margin-right: 10px;
+        }
+}
+
+@media (max-width: 576px) {
+  .LoginForm,
+  .RegistrationForm,
+  .container,
+  .grid {
+    width: 100%;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .column-width {
+    width: 100%;
+  }
+}
+
+
+
+
+
+

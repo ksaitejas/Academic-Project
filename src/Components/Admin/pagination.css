@@ -1,0 +1,71 @@
+/* Pagination.css */
+
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Pagination items (page numbers) */
+.page {
+    margin: 0 5px;
+    cursor: pointer;
+
+    &.active {
+        font-weight: bold;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Violet-colored box */
+.previous a,
+.next a {
+    padding: 10px 15px;
+    background-color: lightblue;
+    /* Violet color */
+    color: white;
+    /* White color */
+    border: 1px solid #000000;
+    /* Violet border */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-decoration: none; /* Remove the underline for links */
+}
+
+/* Modify text color */
+.previous a,
+.next a{
+    color: black;
+    text-decoration: none;
+    /* Remove underlines from text */
+}
+
+/* Handle clicks on the entire button */
+.previous a:hover,
+.next a:hover {
+    background-color:dodgerblue;
+    /* White background on hover */
+}
+
+.previous {
+    margin-right: 10px;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+/* Divider between "Previous" and "Next" */
+.divider {
+    margin: 0 5px;
+    color: #8a2be2;
+    /* Violet color */
+}

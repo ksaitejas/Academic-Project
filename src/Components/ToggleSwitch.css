@@ -1,0 +1,32 @@
+.custom-radio {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio label {
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+.custom-radio input[type="radio"]:checked+label {
+  background-color: #0074d9;
+  color: #fff;
+  border: 1px solid #0074d9;
+}
+.custom-radio label:hover {
+  background-color: white;
+  color: #0074d9;
+  border: 1px solid #0074d9;
+} 

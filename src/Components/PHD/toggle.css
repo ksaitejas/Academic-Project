@@ -1,0 +1,100 @@
+/* Add any necessary global styles here */
+
+.wrapper {
+  width: 98px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.btn_container {
+  display: inline-block;
+  margin: 0px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.btn_container .checkmark {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.checkmark {
+  padding: 0px;
+  margin: 0px;
+}
+
+.yes:checked+.checkmark {
+  background-color: green;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background: rgb(32, 213, 50);
+  background: -moz-linear-gradient(top, rgba(32, 213, 50, 1) 0%, rgba(28, 195, 1, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(32, 213, 50, 1)), color-stop(100%, rgba(28, 195, 1, 1)));
+  background: -webkit-linear-gradient(top, rgba(32, 213, 50, 1) 0%, rgba(28, 195, 1, 1) 100%);
+  background: -o-linear-gradient(top, rgba(32, 213, 50, 1) 0%, rgba(28, 195, 1, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(32, 213, 50, 1) 0%, rgba(28, 195, 1, 1) 100%);
+  background: linear-gradient(to bottom, rgba(32, 213, 50, 1) 0%, rgba(28, 195, 1, 1) 100%);
+  animation-duration: 0.4s;
+  animation-name: slidein;
+  transform: translateZ(0);
+}
+
+.pending:checked+.checkmark {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: black;
+  background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(204, 204, 204, 1)));
+  background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+  background: -o-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+  background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%);
+}
+
+.no:checked+.checkmark {
+  background-color: red;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  animation-duration: 0.4s;
+  animation-name: slideno;
+}
+
+.ion-checkmark-round,
+.ion-close-round {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: black;
+  line-height: 30px;
+}
+
+.ion-record {
+  margin-left: 8px;
+  color: black;
+  line-height: 30px;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(50px, 0);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes slideno {
+  from {
+    transform: translate(-50px, 0);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+  }
+}
