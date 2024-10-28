@@ -177,7 +177,11 @@ function Patent() {
                 />
               </div>
               <div className="label">
-                <label htmlFor="conferenceName">Link to Scopus<br/>/Web of Science:</label>
+                <label htmlFor="conferenceName">
+                  Link to Scopus
+                  <br />
+                  /Web of Science:
+                </label>
               </div>
               <div className="value">
                 <input
@@ -245,7 +249,6 @@ function Patent() {
                   <th>Incentive Type</th>
                   <th>TID</th>
                   <th>Status</th>
-                  
                 </tr>
               </thead>
               <tbody>
@@ -253,7 +256,7 @@ function Patent() {
                   results.map((result) => (
                     <tr key={result._id}>
                       <td>{result.Genre}</td>
-                      
+
                       <td>
                         <a
                           href={`http://localhost:5000/home/pdfwithfirstpagejournal/${result._id}`}
